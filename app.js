@@ -3,3 +3,9 @@ let amigos = [];
 
 console.log("Hola, bienvenido a la red social de amigos");
 console.log(amigos);
+
+function agregarAmigo() {
+    let amigo = document.getElementById("amigo").value;
+    amigos.push(amigo);
+    console.log(amigos);
+}
