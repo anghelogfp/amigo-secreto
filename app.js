@@ -12,4 +12,16 @@ function agregarAmigo() {
     amigos.push(amigo);
     document.getElementById("amigo").value = "";
     console.log(amigos);
+
+    actualizarListaAmigos();
+}
+
+function actualizarListaAmigos() {
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    for (let i = 0; i < amigos.length; i++) {
+        let li = document.createElement("li");
+        li.innerHTML = amigos[i];
+        listaAmigos.appendChild(li);
+    }
 }
